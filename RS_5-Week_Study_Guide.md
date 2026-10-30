@@ -54,34 +54,6 @@ The daily notes give you the essentials and the commands. Each week ends with in
 
 Recommended base topology for Weeks 2-5: 3 routers (R1-R3 in a triangle), 3 switches (SW1-SW3 in a triangle), 2-3 PCs or VPCs.
 
-### 0.3 Study-group library map
-
-The PDFs in this folder map to the weeks as follows.
-
-| Topic | Source files |
-|---|---|
-| Network basics, IP, subnetting, IPv6 | `network-fundamentals.pdf`, `2.00 Implement IPv4.pdf`, `3.00 Implement IPv6.pdf`, `000 CCNA 200-301 - Full workbook.pdf` |
-| DHCP, DNS, NAT, services | `7.00 Implement Network Services.pdf`, `Network-basic-troubleshooting.pdf` |
-| Switching, VLAN, STP, EtherChannel | `switching_fundamentals.pdf`, `1.0 Implement Layer 2 Technologies.pdf`, `STP_cheatsheet.pdf`, `VTP_DTP.pdf`, `native_default_vlan.pdf`, `switchstack.pdf` |
-| Routing fundamentals | `routing_fundamentals.pdf`, `Routing-training-presentation.pdf`, `redistibution.pdf` |
-| OSPF | `OSPF_cheatsheet.pdf`, `OSPF_cheat_sheet2.pdf`, `OSPF_technical_writeup.pdf`, `ospf_hand_notes.pdf` |
-| EIGRP | `EIGRP_cheatsheet.pdf`, `EIGRP_technical_writeup.pdf` |
-| BGP | `BGP_cheatsheet.pdf`, `BGP_short_notest.pdf`, `BGP_Learning-indepth.pdf`, `BGP_AS_Path_Manipulation.pdf`, `BGP_session_reset.pdf`, `IBGP_cheatsheet.pdf`, `IBGP_config.pdf`, `BGP_routing_practice_labs.pdf`, `pynet-labs-bgp/` |
-| ACLs and security | `6.00 Implement Network Security.pdf` |
-| Troubleshooting | `9.00 Troubleshoot a Network.pdf`, `Network-basic-troubleshooting.pdf` |
-| Exam-style Q&A | `CCNP_ENCOR_Q&A.pdf` |
-| Out of scope (optional later) | MPLS, IS-IS, Palo Alto, IP Multicast, CCNP SP |
-
-Note: `BGP_handnotes.pdf`, `ospf_hand_notes.pdf`, `Routing_switching_handwritten.pdf`, `CCIE Notes R&S.pdf` and `ccna_pynets-labs.pdf` are image-based (scanned or handwritten), so they could not be text-extracted. Open them directly as visual supplements.
-
-### 0.4 Security conventions used in this guide
-
-- Placeholders such as `<SECRET>` replace every password or key. Never paste real credentials into configs, tickets, or shared notes.
-- Some library notes use MD5 for routing-protocol authentication. MD5 is considered weak. Prefer HMAC-SHA-256 key chains (OSPF, EIGRP) and TCP-AO where supported (BGP). The BGP `neighbor password` command (TCP MD5 option) is legacy and used only when the peer cannot do better.
-- Use SSH, not Telnet, for device management. Restrict VTY with an ACL (Week 5).
-
----
-
 ## Program Overview
 
 | Week | Theme | Topics |
